@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acerca de — COBACH Plantel 10</title>
+  <meta name="description" content="Historia, misión, visión, valores e información general del COBACH Plantel 10." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ░░ TOPBAR ░░ -->
+<div class="topbar">
+  <div class="contenedor">
+    <span>
+      <i class="fa fa-phone"></i> (624) 124-6108
+      &nbsp;|&nbsp;
+      <i class="fa fa-envelope"></i> plantel10@cobachbcs.edu.mx
+    </span>
+    <span class="redes">
+      Síguenos:
+      <a href="https://www.facebook.com/COBACH10BCS/" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/cobach_10bcs/" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+    </span>
+  </div>
+</div>
+
+<!-- ░░ HEADER / NAVEGACIÓN ░░ -->
+<header>
+  <div class="contenedor">
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <img src="imagenes/logo/logo_cobach10.png" alt="Logo COBACH Plantel 10" onerror="this.style.display='none'" />
+        <div class="txt">
+          <h1>COBACH Plantel 10</h1>
+          <span>Colegio de Bachilleres</span>
+        </div>
+      </div>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        <i class="fa fa-bars"></i>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="acerca.html">Acerca de</a></li>
+        <li><a href="instalaciones.html">Instalaciones</a></li>
+        <li><a href="capacitaciones.html">Capacitaciones</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="anuario.html">Anuario</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ════════════════════════════════════════
+     ACERCA DE LA ESCUELA
+════════════════════════════════════════ -->
+<section id="acerca" class="seccion">
+  <div class="contenedor">
+    <h2 class="sec-titulo">Acerca de la Escuela</h2>
+    <p class="subtitulo">Conoce nuestra historia, misión, visión y valores institucionales</p>
+
+    <div class="tabs-nav">
+      <button class="tab-btn on"  onclick="abrirTab(this,'tab-historia')">Historia</button>
+      <button class="tab-btn"     onclick="abrirTab(this,'tab-mision')">Misión</button>
+      <button class="tab-btn"     onclick="abrirTab(this,'tab-vision')">Visión</button>
+      <button class="tab-btn"     onclick="abrirTab(this,'tab-valores')">Valores</button>
+      <button class="tab-btn"     onclick="abrirTab(this,'tab-general')">Información General</button>
+    </div>
+
+    <!-- Historia -->
+    <div id="tab-historia" class="tab-panel on">
+      <div class="historia-grid">
+        <div class="historia-txt">
+          <h3>Historia del COBACH Plantel 10</h3>
+          <p>El Colegio de Bachilleres del Estado de Baja California Sur (COBACH BCS) es una institución de educación media superior que forma parte del sistema público de bachillerato en México. Fue creado con el propósito de ofrecer una educación de calidad y accesible para los jóvenes sudcalifornianos, brindándoles una formación integral que los prepare tanto para continuar estudios universitarios como para incorporarse productivamente al mundo laboral.</p>
+          <p>El Plantel 10, ubicado en la región de Los Cabos, es una de las sedes del COBACH BCS que atiende a la comunidad estudiantil de su zona de influencia. A lo largo de los años ha formado generaciones de jóvenes comprometidos, combinando la preparación académica con capacitaciones técnicas que potencian las competencias y habilidades de sus egresados, quienes han destacado en universidades y centros de trabajo del estado y del país.</p>
+          <p>Desde sus inicios, el plantel ha mantenido el compromiso institucional de ofrecer educación de calidad, invirtiendo constantemente en infraestructura, formación docente y programas académicos que respondan a las necesidades del entorno social y productivo de Baja California Sur, alineados con los estándares nacionales de la Secretaría de Educación Pública (SEP).</p>
+        </div>
+        <div class="historia-img">
+          <img src="imagenes/plantel/historia.jpg" alt="Historia del plantel"
+               onerror="this.outerHTML='<p style=\'padding:24px;text-align:center;\'>📷 imagenes/plantel/historia.jpg</p>'" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Misión -->
+    <div id="tab-mision" class="tab-panel">
+      <div class="mvv-grid" style="max-width:680px;margin:0 auto;">
+        <div class="mvv-card">
+          <div class="mvv-icono">🎯</div>
+          <h3>Misión</h3>
+          <p>Ofrecer educación media superior de calidad a los jóvenes del estado de Baja California Sur, mediante un bachillerato general que integra capacitaciones técnicas y paquetes académicos especializados. Promovemos el desarrollo de competencias, valores y habilidades que permitan a nuestros estudiantes continuar con estudios superiores, incorporarse con éxito al mercado laboral y contribuir de manera activa y responsable al desarrollo de su comunidad y del país.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Visión -->
+    <div id="tab-vision" class="tab-panel">
+      <div class="mvv-grid" style="max-width:680px;margin:0 auto;">
+        <div class="mvv-card">
+          <div class="mvv-icono">🔭</div>
+          <h3>Visión</h3>
+          <p>Ser la institución de educación media superior de referencia en el estado de Baja California Sur, reconocida por la excelencia de su oferta educativa, la calidad de sus docentes y el éxito de sus egresados. Un plantel moderno, incluyente e innovador, comprometido con la transformación educativa, que forma ciudadanos íntegros, competentes y con conciencia social, capaces de enfrentar con éxito los retos del siglo XXI.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Valores -->
+    <div id="tab-valores" class="tab-panel">
+      <p style="text-align:center;color:var(--gris-txt);margin-bottom:28px;">
+        Los valores que guían nuestra comunidad escolar cada día:
+      </p>
+      <div class="valores-lista">
+        <span class="valor-badge">Respeto</span>
+        <span class="valor-badge">Responsabilidad</span>
+        <span class="valor-badge">Honestidad</span>
+        <span class="valor-badge">Solidaridad</span>
+        <span class="valor-badge">Trabajo en equipo</span>
+        <span class="valor-badge">Excelencia</span>
+        <span class="valor-badge">Tolerancia</span>
+        <span class="valor-badge">Compromiso</span>
+        <span class="valor-badge">Integridad</span>
+        <span class="valor-badge">Innovación</span>
+      </div>
+    </div>
+
+    <!-- Información General -->
+    <div id="tab-general" class="tab-panel">
+      <div class="mvv-grid">
+        <div class="mvv-card">
+          <div class="mvv-icono">📍</div>
+          <h3>Ubicación</h3>
+          <p>Palma Senegal S/N y Palma de Las Canarias, Col. Las Palmas, C.P. 23477, Cabo San Lucas, BCS</p>
+        </div>
+        <div class="mvv-card">
+          <div class="mvv-icono">⏰</div>
+          <h3>Horarios</h3>
+          <p>Turno Matutino: 7:00 – 14:00 h<br />Turno Vespertino: 14:00 – 21:00 h</p>
+        </div>
+        <div class="mvv-card">
+          <div class="mvv-icono">📞</div>
+          <h3>Contacto</h3>
+          <p>Tel: (624) 124-6108<br />plantel10@cobachbcs.edu.mx</p>
+        </div>
+        <div class="mvv-card">
+          <div class="mvv-icono">🏫</div>
+          <h3>Modalidad</h3>
+          <p>Bachillerato General<br />Subsistema COBACH BCS<br />Los Cabos, Baja California Sur</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════ -->
+<footer>
+  <div class="contenedor">
+    <div class="footer-grid">
+
+      <div>
+        <h4>COBACH Plantel 10</h4>
+        <p>Institución de educación media superior comprometida con la formación integral de jóvenes, fomentando valores, conocimiento y competencias para la vida y el trabajo.</p>
+        <div class="footer-redes">
+          <a href="https://www.facebook.com/COBACH10BCS/" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/cobach_10bcs/" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="acerca.html">Acerca de</a></li>
+          <li><a href="instalaciones.html">Instalaciones</a></li>
+          <li><a href="capacitaciones.html">Capacitaciones</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="anuario.html">Anuario Digital</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contacto</h4>
+        <p>
+          <i class="fa fa-map-marker-alt"></i> Palma Senegal S/N, Col. Las Palmas<br />
+          C.P. 23477, Cabo San Lucas, BCS<br /><br />
+          <i class="fa fa-phone"></i> (624) 124-6108<br /><br />
+          <i class="fa fa-envelope"></i> plantel10@cobachbcs.edu.mx<br /><br />
+          <i class="fa fa-globe"></i>
+          <a href="https://www.cobachbcs.edu.mx" target="_blank" rel="noopener">www.cobachbcs.edu.mx</a>
+        </p>
+      </div>
+
+      <div>
+        <h4>Equipo Desarrollador</h4>
+        <p class="footer-creditos">
+          Proyecto desarrollado por:<br />
+          <span>1. [Nombre del integrante 1]</span><br />
+          <span>2. [Nombre del integrante 2]</span><br />
+          <span>3. [Nombre del integrante 3]</span><br />
+          <span>4. [Nombre del integrante 4]</span><br />
+          <span>5. [Nombre del integrante 5]</span><br /><br />
+          Materia: Informática · Grupo: [X]<br />
+          Ciclo escolar 2024–2025
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-bar">
+    <div class="contenedor">
+      &copy; <span id="ano"></span> COBACH Plantel 10 — Todos los derechos reservados.
+      &nbsp;|&nbsp; Los Cabos, Baja California Sur
+    </div>
+  </div>
+</footer>
+
+<button id="btn-top" aria-label="Volver arriba">
+  <i class="fa fa-chevron-up"></i>
+</button>
+
+
+<script>
+/* ── Año actual ── */
+document.getElementById('ano').textContent = new Date().getFullYear();
+
+/* ── Menú hamburguesa ── */
+document.getElementById('menu-toggle').addEventListener('click', function () {
+  document.getElementById('nav-menu').classList.toggle('abierto');
+});
+document.querySelectorAll('.nav-menu a').forEach(function (a) {
+  a.addEventListener('click', function () {
+    document.getElementById('nav-menu').classList.remove('abierto');
+  });
+});
+
+/* ── Enlace activo según página ── */
+(function () {
+  var page = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.nav-menu a').forEach(function (a) {
+    if (a.getAttribute('href') === page) a.classList.add('activo');
+  });
+})();
+
+/* ── Botón volver arriba ── */
+window.addEventListener('scroll', function () {
+  document.getElementById('btn-top').classList.toggle('vis', window.scrollY > 400);
+});
+document.getElementById('btn-top').addEventListener('click', function () {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+/* ── Tabs ── */
+function abrirTab(btn, id) {
+  var contenedor = btn.closest('.contenedor, section');
+  contenedor.querySelectorAll('.tab-btn').forEach(function (b) { b.classList.remove('on'); });
+  contenedor.querySelectorAll('.tab-panel').forEach(function (p) { p.classList.remove('on'); });
+  btn.classList.add('o

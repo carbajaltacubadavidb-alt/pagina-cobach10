@@ -1,0 +1,3 @@
+CARPETA: GALERÍA / ACTIVIDADES DEPORTIVAS
+Mínimo 10 fotos reales de actividades deportivas (torneos, competencias, Ed. Física, etc.)
+Nombres: dep1.jpg, dep2.jpg ... dep10.jpg

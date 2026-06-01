@@ -1,0 +1,20 @@
+# Archivos originales sin comprimir (muy pesados)
+imagenes/banner/IMG_*.jpg
+imagenes/instalaciones/**/IMG_*.jpg
+imagenes/instalaciones/**/PANO_*.jpg
+imagenes/instalaciones/**/*.jpeg
+
+# Archivos de entrevista Word (ya están convertidos a .txt)
+**/*.docx
+
+# Archivos ocultos de macOS
+._*
+.DS_Store
+
+# Archivos temporales de Windows
+Thumbs.db
+desktop.ini
+
+# Documentos del proyecto
+*.docx
+Proyecto*.docx

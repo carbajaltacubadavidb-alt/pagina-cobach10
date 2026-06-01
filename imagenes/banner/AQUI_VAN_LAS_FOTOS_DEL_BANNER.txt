@@ -1,0 +1,19 @@
+CARPETA: BANNER / SLIDER PRINCIPAL
+====================================
+Coloca aquí las fotos que aparecerán en el banner principal (carrusel) de la página de inicio.
+
+Formatos recomendados: .jpg o .png
+Resolución recomendada: 1920 x 600 píxeles (formato horizontal/panorámico)
+
+Ejemplos de fotos sugeridas:
+  - Fachada del plantel
+  - Estudiantes en aulas
+  - Actos académicos o cívicos
+  - Instalaciones deportivas
+
+Nombres sugeridos:
+  banner1.jpg
+  banner2.jpg
+  banner3.jpg
+
+Una vez que agregues las fotos, actualiza las rutas en index.html dentro de la sección del carrusel.

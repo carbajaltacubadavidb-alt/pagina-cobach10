@@ -1,0 +1,24 @@
+CARPETA: INSTALACIONES DEL PLANTEL
+=====================================
+Coloca aquí las fotos de las instalaciones físicas del COBACH 10.
+
+Formatos recomendados: .jpg o .png
+Resolución recomendada: 1200 x 800 píxeles
+
+Fotos sugeridas de las instalaciones:
+  - Fachada principal
+  - Aulas
+  - Laboratorio de Cómputo
+  - Laboratorio de Ciencias
+  - Biblioteca
+  - Canchas deportivas
+  - Cafetería
+  - Áreas verdes / patio
+
+Nombres sugeridos:
+  fachada.jpg
+  aula.jpg
+  laboratorio_computo.jpg
+  laboratorio_ciencias.jpg
+  biblioteca.jpg
+  canchas.jpg

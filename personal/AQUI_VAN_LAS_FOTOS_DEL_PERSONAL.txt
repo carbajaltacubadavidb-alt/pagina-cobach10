@@ -1,0 +1,19 @@
+CARPETA: PERSONAL DOCENTE Y ADMINISTRATIVO
+===========================================
+Coloca aquí las fotos del personal del plantel.
+
+Formatos recomendados: .jpg o .png
+Resolución recomendada: 400 x 400 píxeles (formato cuadrado, tipo retrato)
+
+Incluye fotos de:
+  - Director(a)
+  - Subdirector(a) Académico
+  - Subdirector(a) Administrativo
+  - Orientadores
+  - Personal docente (opcional)
+
+Nombres sugeridos:
+  director.jpg
+  subdirector_academico.jpg
+  subdirector_admin.jpg
+  orientador1.jpg

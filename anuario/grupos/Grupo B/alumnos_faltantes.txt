@@ -1,0 +1,28 @@
+Alumnos sin carpeta/foto en Grupo B
+=====================================
+Todos los alumnos de la lista están incluidos en el anuario.html.
+
+Los siguientes alumnos no tienen carpeta con fotos — al conseguir sus fotos,
+crea una carpeta con su nombre y agrega el atributo data-fotos en su tarjeta:
+
+ 1. Armenta Rodríguez, Rigoberto Yael  (tiene foto: WhatsApp Image 2026-05-17 at 6.21.16 PM.jpeg)
+11. Catalán Zepahua, Nicole
+12. Crespo Ibarra, Luz Bridget
+13. Cruz Mejía, Edwin Damasso
+14. Damián Mendoza, Emily Giselle
+15. Flores Zenaido, Edith Emily
+16. Galicia Lujan, Bradley
+17. Gámez Pérez, María Daniela
+18. García, Johana Neftalí
+19. García Bustamante, Liliana Yudith
+20. García Campos, Luis Enrique
+21. García Cruz, Alicia
+22. Gómez Fuentes, Mario Zahir
+23. Hernández González, Axel Uriel
+24. Hesiquio Ríos, Dulce Johana
+25. Juárez Morales, Dulce Elena
+36. Sánchez Saldaña, Noemi
+37. Sandoval Ramos, Ian Azhael
+38. Soriano Santos, Cristopher
+
+Total sin carpeta: 18 | En HTML: 38/38 ✓

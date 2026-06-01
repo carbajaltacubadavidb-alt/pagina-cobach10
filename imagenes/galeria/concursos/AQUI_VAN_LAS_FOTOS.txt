@@ -1,0 +1,3 @@
+CARPETA: GALERÍA / CONCURSOS
+Mínimo 10 fotos reales de concursos (olimpiadas, ferias de ciencias, oratoria, etc.)
+Nombres: con1.jpg, con2.jpg ... con10.jpg

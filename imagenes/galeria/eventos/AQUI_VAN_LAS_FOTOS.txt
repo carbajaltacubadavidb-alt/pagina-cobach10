@@ -1,0 +1,3 @@
+CARPETA: GALERÍA / EVENTOS
+Mínimo 10 fotos reales de eventos escolares (graduaciones, festivales, ceremonias, etc.)
+Nombres: evento1.jpg, evento2.jpg ... evento10.jpg (puedes agregar más)

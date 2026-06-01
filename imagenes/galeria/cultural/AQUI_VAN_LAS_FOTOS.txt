@@ -1,0 +1,3 @@
+CARPETA: GALERÍA / EVENTOS CULTURALES
+Mínimo 10 fotos reales de eventos culturales (bailes, teatro, exposiciones, música, etc.)
+Nombres: cul1.jpg, cul2.jpg ... cul10.jpg

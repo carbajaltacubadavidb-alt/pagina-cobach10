@@ -1,0 +1,11 @@
+CARPETA: NOTICIAS Y AVISOS
+===========================
+Coloca aquí las fotos que acompañarán cada noticia o aviso publicado.
+
+Formatos recomendados: .jpg o .png
+Resolución recomendada: 600 x 400 píxeles
+
+Nombra las fotos de acuerdo a la noticia:
+  noticia_graduacion2025.jpg
+  aviso_inscripciones.jpg
+  evento_dia_madre.jpg

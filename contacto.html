@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto — COBACH Plantel 10</title>
+  <meta name="description" content="Contáctanos — COBACH Plantel 10. Teléfono, correo, dirección y formulario de contacto." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ░░ TOPBAR ░░ -->
+<div class="topbar">
+  <div class="contenedor">
+    <span>
+      <i class="fa fa-phone"></i> (624) 124-6108
+      &nbsp;|&nbsp;
+      <i class="fa fa-envelope"></i> plantel10@cobachbcs.edu.mx
+    </span>
+    <span class="redes">
+      Síguenos:
+      <a href="https://www.facebook.com/COBACH10BCS/" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/cobach_10bcs/" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+    </span>
+  </div>
+</div>
+
+<!-- ░░ HEADER / NAVEGACIÓN ░░ -->
+<header>
+  <div class="contenedor">
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <img src="imagenes/logo/logo_cobach10.png" alt="Logo COBACH Plantel 10" onerror="this.style.display='none'" />
+        <div class="txt">
+          <h1>COBACH Plantel 10</h1>
+          <span>Colegio de Bachilleres</span>
+        </div>
+      </div>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        <i class="fa fa-bars"></i>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="acerca.html">Acerca de</a></li>
+        <li><a href="instalaciones.html">Instalaciones</a></li>
+        <li><a href="capacitaciones.html">Capacitaciones</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="anuario.html">Anuario</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ════════════════════════════════════════
+     FORMULARIO DE CONTACTO
+════════════════════════════════════════ -->
+<section id="contacto" class="seccion sec-gris">
+  <div class="contenedor">
+    <h2 class="sec-titulo">Contacto</h2>
+    <p class="subtitulo">Estamos para atenderte — escríbenos o visítanos</p>
+
+    <div class="contacto-wrap">
+
+      <!-- Formulario -->
+      <div class="form-contacto">
+        <h3><i class="fa fa-paper-plane" style="color:var(--primario)"></i> Envíanos un mensaje</h3>
+        <form id="form-contacto" onsubmit="enviarForm(event)">
+
+          <div class="form-row">
+            <label for="nombre">Nombre completo *</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required />
+          </div>
+
+          <div class="form-row">
+            <label for="correo">Correo electrónico *</label>
+            <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required />
+          </div>
+
+          <div class="form-row">
+            <label for="asunto">Asunto</label>
+            <input type="text" id="asunto" name="asunto" placeholder="¿En qué podemos ayudarte?" />
+          </div>
+
+          <div class="form-row">
+            <label for="mensaje">Mensaje *</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-enviar">
+            <i class="fa fa-send"></i> Enviar mensaje
+          </button>
+          <p class="form-ok" id="form-ok">
+            ✅ Mensaje enviado correctamente. ¡Gracias por contactarnos!
+          </p>
+        </form>
+      </div>
+
+      <!-- Datos de contacto + mapa -->
+      <div>
+        <div class="info-contacto">
+          <h3>Información del Plantel</h3>
+          <div class="dato-c">
+            <span class="ico"><i class="fa fa-map-marker-alt"></i></span>
+            <div>
+              <strong>Dirección</strong>
+              <span>Palma Senegal S/N y Palma de Las Canarias, Col. Las Palmas, C.P. 23477, Cabo San Lucas, BCS</span>
+            </div>
+          </div>
+          <div class="dato-c">
+            <span class="ico"><i class="fa fa-phone"></i></span>
+            <div>
+              <strong>Teléfono</strong>
+              <span>(624) 124-6108</span>
+            </div>
+          </div>
+          <div class="dato-c">
+            <span class="ico"><i class="fa fa-envelope"></i></span>
+            <div>
+              <strong>Correo institucional</strong>
+              <span>plantel10@cobachbcs.edu.mx</span>
+            </div>
+          </div>
+          <div class="dato-c">
+            <span class="ico"><i class="fa fa-clock"></i></span>
+            <div>
+              <strong>Horario de atención</strong>
+              <span>Lunes a viernes: 7:00 – 21:00 h</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mapa — reemplaza el src del iframe con el de Google Maps real del plantel -->
+        <div class="mapa-box">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d100000!2d-106.09!3d28.635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Ubicación COBACH Plantel 10">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════ -->
+<footer>
+  <div class="contenedor">
+    <div class="footer-grid">
+
+      <div>
+        <h4>COBACH Plantel 10</h4>
+        <p>Institución de educación media superior comprometida con la formación integral de jóvenes, fomentando valores, conocimiento y competencias para la vida y el trabajo.</p>
+        <div class="footer-redes">
+          <a href="https://www.facebook.com/COBACH10BCS/" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/cobach_10bcs/" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="acerca.html">Acerca de</a></li>
+          <li><a href="instalaciones.html">Instalaciones</a></li>
+          <li><a href="capacitaciones.html">Capacitaciones</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="anuario.html">Anuario Digital</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contacto</h4>
+        <p>
+          <i class="fa fa-map-marker-alt"></i> Palma Senegal S/N, Col. Las Palmas<br />
+          C.P. 23477, Cabo San Lucas, BCS<br /><br />
+          <i class="fa fa-phone"></i> (624) 124-6108<br /><br />
+          <i class="fa fa-envelope"></i> plantel10@cobachbcs.edu.mx<br /><br />
+          <i class="fa fa-globe"></i>
+          <a href="https://www.cobachbcs.edu.mx" target="_blank" rel="noopener">www.cobachbcs.edu.mx</a>
+        </p>
+      </div>
+
+      <div>
+        <h4>Equipo Desarrollador</h4>
+        <p class="footer-creditos">
+          Proyecto desarrollado por:<br />
+          <span>1. [Nombre del integrante 1]</span><br />
+          <span>2. [Nombre del integrante 2]</span><br />
+          <span>3. [Nombre del integrante 3]</span><br />
+          <span>4. [Nombre del integrante 4]</span><br />
+          <span>5. [Nombre del integrante 5]</span><br /><br />
+          Materia: Informática · Grupo: [X]<br />
+          Ciclo escolar 2024–2025
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-bar">
+    <div class="contenedor">
+      &copy; <span id="ano"></span> COBACH Plantel 10 — Todos los derechos reservados.
+      &nbsp;|&nbsp; Los Cabos, Baja California Sur
+    </div>
+  </div>
+</footer>
+
+<button id="btn-top" aria-label="Volver arriba">
+  <i class="fa fa-chevron-up"></i>
+</button>
+
+
+<script>
+document.getElementById('ano').textContent = new Date().getFullYear();
+
+document.getElementById('menu-toggle').addEventListener('click', function () {
+  document.getElementById('nav-menu').classList.toggle('abierto');
+});
+document.querySelectorAll('.nav-menu a').forEach(function (a) {
+  a.addEventListener('click', function () {
+    document.getElementById('nav-menu').classList.remove('abierto');
+  });
+});
+
+(function () {
+  var page = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.nav-menu a').forEach(function (a) {
+    if (a.getAttribute('href') === page) a.classList.add('activo');
+  });
+})();
+
+window.addEventListener('scroll', function () {
+  document.getElementById('btn-top').classList.toggle('vis', window.scrollY > 400);
+});
+document.getElementById('btn-top').addEventListener('click', function () {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+/* ── Formulario (demo visual) ── */
+function enviarForm(e) {
+  e.preventDefault();
+  document.getElementById('form-contacto').reset();
+  var ok = document.getElementById('form-ok');
+  ok.style.display = 'block';
+  setTimeout(function () { ok.style.display = 'none'; }, 5000);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+CARPETA: ANUARIO / MAESTROS
+Una foto por cada docente del plantel.
+Formato recomendado: cuadrada 400x400 px, buena iluminación, tipo retrato.
+Nombres: maestro1.jpg, maestro2.jpg, etc.
+(O usa el nombre del maestro: profe_garcia.jpg)
+
+⚠️ Las fotos deben ser reales y autorizadas por cada docente.
+⚠️ NO se permite usar imágenes generadas por IA.

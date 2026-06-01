@@ -1,0 +1,19 @@
+CARPETA: GALERÍA DE FOTOS
+==========================
+Coloca aquí las fotos que aparecerán en la sección de Galería.
+
+Formatos recomendados: .jpg o .png
+Resolución recomendada: 800 x 600 píxeles o superior
+
+Ejemplos de fotos sugeridas:
+  - Eventos escolares (graduaciones, festivales)
+  - Actividades deportivas
+  - Talleres y laboratorios
+  - Visitas y excursiones
+  - Ferias y exposiciones
+
+Puedes organizar las fotos en subcarpetas:
+  /galeria/eventos/
+  /galeria/deportes/
+  /galeria/academico/
+  /galeria/cultural/

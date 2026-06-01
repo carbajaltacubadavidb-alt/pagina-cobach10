@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>COBACH Plantel 10 — Sitio Oficial</title>
+  <meta name="description" content="Sitio web institucional del Colegio de Bachilleres Plantel 10. Historia, instalaciones, capacitaciones, galería y anuario digital 2023-2026." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ░░ TOPBAR ░░ -->
+<div class="topbar">
+  <div class="contenedor">
+    <span>
+      <i class="fa fa-phone"></i> (624) 124-6108
+      &nbsp;|&nbsp;
+      <i class="fa fa-envelope"></i> plantel10@cobachbcs.edu.mx
+    </span>
+    <span class="redes">
+      Síguenos:
+      <a href="https://www.facebook.com/COBACH10BCS/" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/cobach_10bcs/" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+    </span>
+  </div>
+</div>
+
+<!-- ░░ HEADER / NAVEGACIÓN ░░ -->
+<header>
+  <div class="contenedor">
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <img src="imagenes/logo/logo_cobach10.png" alt="Logo COBACH Plantel 10" onerror="this.style.display='none'" />
+        <div class="txt">
+          <h1>COBACH Plantel 10</h1>
+          <span>Colegio de Bachilleres</span>
+        </div>
+      </div>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        <i class="fa fa-bars"></i>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="acerca.html">Acerca de</a></li>
+        <li><a href="instalaciones.html">Instalaciones</a></li>
+        <li><a href="capacitaciones.html">Capacitaciones</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="anuario.html">Anuario</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ════════════════════════════════════════
+     INICIO
+════════════════════════════════════════ -->
+<section id="inicio">
+
+  <!-- Hero / Carrusel -->
+  <div class="hero">
+    <div class="hero-slider" id="slider">
+
+      <!-- Slide 1 — agrega foto en: imagenes/banner/banner1.jpg -->
+      <div class="hero-slide" style="background-image: url('imagenes/banner/banner1.jpg')">
+        <div class="hero-caption">
+          <h2>Bienvenido al COBACH Plantel 10</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+          <p class="hero-frase">&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&rdquo;</p>
+        </div>
+      </div>
+
+      <!-- Slide 2 — agrega foto en: imagenes/banner/banner2.jpg -->
+      <div class="hero-slide" style="background-image: url('imagenes/banner/banner2.jpg')">
+        <div class="hero-caption">
+          <h2>Excelencia Académica</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+        </div>
+      </div>
+
+      <!-- Slide 3 — agrega foto en: imagenes/banner/banner3.jpg -->
+      <div class="hero-slide" style="background-image: url('imagenes/banner/banner3.jpg')">
+        <div class="hero-caption">
+          <h2>Desarrollo Integral</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+        </div>
+      </div>
+
+    </div>
+    <button class="hero-btn prev" id="hero-prev"><i class="fa fa-chevron-left"></i></button>
+    <button class="hero-btn next" id="hero-next"><i class="fa fa-chevron-right"></i></button>
+    <div class="hero-dots" id="dots">
+      <button class="dot on"></button>
+      <button class="dot"></button>
+      <button class="dot"></button>
+    </div>
+  </div>
+
+  <!-- Barra de cifras -->
+  <div class="cifras-bar">
+    <div class="contenedor">
+      <div class="cifras-grid">
+        <!-- Cambia data-n por los números reales del plantel -->
+        <div>
+          <div class="cifra-num" data-n="850">0</div>
+          <div class="cifra-lbl">Estudiantes inscritos</div>
+        </div>
+        <div>
+          <div class="cifra-num" data-n="45">0</div>
+          <div class="cifra-lbl">Docentes certificados</div>
+        </div>
+        <div>
+          <div class="cifra-num" data-n="6">0</div>
+          <div class="cifra-lbl">Semestres activos</div>
+        </div>
+        <div>
+          <div class="cifra-num" data-n="20">0</div>
+          <div class="cifra-lbl">Años de trayectoria</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- ════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════ -->
+<footer>
+  <div class="contenedor">
+    <div class="footer-grid">
+
+      <div>
+        <h4>COBACH Plantel 10</h4>
+        <p>Institución de educación media superior comprometida con la formación integral de jóvenes, fomentando valores, conocimiento y competencias para la vida y el trabajo.</p>
+        <div class="footer-redes">
+          <a href="https://www.facebook.com/COBACH10BCS/" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/cobach_10bcs/" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="acerca.html">Acerca de</a></li>
+          <li><a href="instalaciones.html">Instalaciones</a></li>
+          <li><a href="capacitaciones.html">Capacitaciones</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="anuario.html">Anuario Digital</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contacto</h4>
+        <p>
+          <i class="fa fa-map-marker-alt"></i> Palma Senegal S/N, Col. Las Palmas<br />
+          C.P. 23477, Cabo San Lucas, BCS<br /><br />
+          <i class="fa fa-phone"></i> (624) 124-6108<br /><br />
+          <i class="fa fa-envelope"></i> plantel10@cobachbcs.edu.mx<br /><br />
+          <i class="fa fa-globe"></i>
+          <a href="https://www.cobachbcs.edu.mx" target="_blank" rel="noopener">www.cobachbcs.edu.mx</a>
+        </p>
+      </div>
+
+      <div>
+        <h4>Equipo Desarrollador</h4>
+        <p class="footer-creditos">
+          Proyecto desarrollado por:<br />
+          <span>1. [Nombre del integrante 1]</span><br />
+          <span>2. [Nombre del integrante 2]</span><br />
+          <span>3. [Nombre del integrante 3]</span><br />
+          <span>4. [Nombre del integrante 4]</span><br />
+          <span>5. [Nombre del integrante 5]</span><br /><br />
+          Materia: Informática · Grupo: [X]<br />
+          Ciclo escolar 2024–2025
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-bar">
+    <div class="contenedor">
+      &copy; <span id="ano"></span> COBACH Plantel 10 — Todos los derechos reservados.
+      &nbsp;|&nbsp; Los Cabos, Baja California Sur
+    </div>
+  </div>
+</footer>
+
+<!-- Botón volver arriba -->
+<button id="btn-top" aria-label="Volver arriba">
+  <i class="fa fa-chevron-up"></i>
+</button>
+
+
+<!-- ════════════════════════════════════════
+     JAVASCRIPT
+════════════════════════════════════════ -->
+<script>
+/* ── Año actual ── */
+document.getElementById('ano').textContent = new Date().getFullYear();
+
+/* ── Menú hamburguesa ── */
+document.getElementById('menu-toggle').addEventListener('click', function () {
+  document.getElementById('nav-menu').classList.toggle('abierto');
+});
+document.querySelectorAll('.nav-menu a').forEach(function (a) {
+  a.addEventListener('click', function () {
+    document.getElementById('nav-menu').classList.remove('abierto');
+  });
+});
+
+/* ── Enlace activo según página ── */
+(function () {
+  var page = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.nav-menu a').forEach(function (a) {
+    if (a.getAttribute('href') === page) a.classList.add('activo');
+  });
+})();
+
+/* ── Botón volver arriba ── */
+window.addEventListener('scroll', function () {
+  document.getElementById('btn-top').classList.toggle('vis', window.scrollY > 400);
+});
+document.getElementById('btn-top').addEventListener('click', function () {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+/* ── Carrusel hero ── */
+var slideActual = 0, timerCarrusel;
+var slider      = document.getElementById('slider');
+var dots        = document.querySelectorAll('.dot');
+var totalSlides = document.querySelectorAll('.hero-slide').length;
+
+function irSlide(n) {
+  slideActual = ((n % totalSlides) + totalSlides) % totalSlides;
+  slider.style.transform = 'translateX(-' + (slideActual * 100) + '%)';
+  dots.forEach(function (d, i) { d.classList.toggle('on', i === slideActual); });
+}
+function cambiarSlide(dir) { clearInterval(timerCarrusel); irSlide(slideActual + dir); iniciarTimer(); }
+function iniciarTimer() { timerCarrusel = setInterval(function () { irSlide(slideActual + 1); }, 5000); }
+
+document.getElementById('hero-prev').addEventListener('click', function () { cambiarSlide(-1); });
+document.getElementById('hero-next').addEventListener('click', function () { cambiarSlide(1); });
+dots.forEach(function (d, i) {
+  d.addEventListener('click', function () { clearInterval(timerCarrusel); irSlide(i); iniciarTimer(); });
+});
+iniciarTimer();
+
+/* ── Animación de cifras ── */
+function animarNum(el, fin, ms) {
+  var t0;
+  (function paso(ts) {
+    if (!t0) t0 = ts;
+    var p = Math.min((ts - t0) / ms, 1);
+    el.textContent = Math.floor(p * fin).toLocaleString();
+    if (p < 1) requestAnimationFrame(paso);
+    else el.textContent = fin.toLocaleString();
+  })(performance.now());
+}
+var obsCifras = new IntersectionObserver(function (entries) {
+  entries.forEach(function (e) {
+    if (e.isIntersecting) {
+      animarNum(e.target, +e.target.dataset.n, 1600);
+      obsCifras.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.4 });
+document.querySelectorAll('.cifra-num[data-n]').forEach(function (el) { obsCifras.observe(el); });
+</script>
+
+</body>
+</html>

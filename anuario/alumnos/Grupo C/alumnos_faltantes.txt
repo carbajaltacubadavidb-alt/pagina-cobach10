@@ -1,0 +1,48 @@
+Alumnos sin carpeta/foto en Grupo C
+=====================================
+Todos los alumnos de la lista están incluidos en el anuario.html.
+
+Los siguientes alumnos no tienen carpeta con fotos — al conseguir sus fotos,
+crea una carpeta con su nombre y agrega el atributo data-fotos en su tarjeta:
+
+ 1. Abarca Lorenzo, Jacquelin
+ 2. Abarca Solís, Sonny Willmar
+ 3. Adame Adame, Carolina
+ 4. Ángel Inés, Karen Viridiana
+ 5. Angulo Zavala, Doriela
+ 6. Arellano Figueroa, Angela
+ 7. Bailón Vélez, Jesús Uriel
+ 8. Balderas Dorantes, Luis Javier
+ 9. Bautista Hernández, Jamileth
+10. Cabal Hernández, Dana Rebeca
+11. Castro Ausencio, Luz Iveth
+12. Chula Martínez, Monserrat
+13. Cilio Domínguez, Jasmín Itamar
+14. Cortes Santos, Britany Esmeralda
+15. Cruz Alvarez, Assul
+18. Fernando Camacho, Dulce Estrella
+19. Fricache Lozano, Ambar Guadalupe  (carpeta: ambar/ — sin fotos)
+20. García Hernández, Diana Estela
+21. Herrera Escudero, Angelín
+23. Justo de Jesús, Paula Jimena
+25. Martínez Reyes, Job
+26. Martínez Sandoval, Cesilia Saraí
+27. Mora Acosta, Mónica
+28. Moreno Casimiro, Juan David
+29. Morga Ayala, Yandel
+30. Moyado López, Daniela Lizeth
+31. Navarrete Cruz, Paola Getsemaní
+32. Navarrete Cuautle, Katherine Rosmery
+34. Paredes Barrón, Karla
+35. Pérez Nápoles, Sara Noemí
+36. Rábago Rábago, Anyely Guadalupe  (carpeta: anyley/ — sin fotos)
+37. Rivera Flores, Maite Estefani    (carpeta: maite/ — sin fotos)
+38. Rivera Soto, Carlos Joel         (carpeta: carlos/ — sin fotos)
+39. Rodríguez Tezoco, Gabriela
+40. Ventura Ramírez, Kaory
+41. Ventura Ramírez, Nahomy
+42. Verdugo Cantor, Irma Alejandra   (carpeta: irma/ — sin fotos)
+43. Vizcarra Morales, Ángel Exahy    (carpeta: angel/ — sin fotos)
+44. Zapata Rivera, Romina Jetzibe    (carpeta: romina/ — sin fotos)
+
+Total sin foto: 40 | En HTML: 44/44 ✓

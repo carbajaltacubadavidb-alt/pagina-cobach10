@@ -1,0 +1,4 @@
+CARPETA: INSTALACIONES / SALONES
+Mínimo 3 fotos reales de los salones de clase.
+Nombres: salon1.jpg, salon2.jpg, salon3.jpg
+Resolución recomendada: 800x600 px o mayor

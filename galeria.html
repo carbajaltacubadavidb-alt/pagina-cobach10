@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galería — COBACH Plantel 10</title>
+  <meta name="description" content="Galería escolar del COBACH Plantel 10: eventos, deportes, concursos, cultura y vida estudiantil." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ░░ TOPBAR ░░ -->
+<div class="topbar">
+  <div class="contenedor">
+    <span>
+      <i class="fa fa-phone"></i> (624) 124-6108
+      &nbsp;|&nbsp;
+      <i class="fa fa-envelope"></i> plantel10@cobachbcs.edu.mx
+    </span>
+    <span class="redes">
+      Síguenos:
+      <a href="https://www.facebook.com/COBACH10BCS/" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/cobach_10bcs/" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+    </span>
+  </div>
+</div>
+
+<!-- ░░ HEADER / NAVEGACIÓN ░░ -->
+<header>
+  <div class="contenedor">
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <img src="imagenes/logo/logo_cobach10.png" alt="Logo COBACH Plantel 10" onerror="this.style.display='none'" />
+        <div class="txt">
+          <h1>COBACH Plantel 10</h1>
+          <span>Colegio de Bachilleres</span>
+        </div>
+      </div>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        <i class="fa fa-bars"></i>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="acerca.html">Acerca de</a></li>
+        <li><a href="instalaciones.html">Instalaciones</a></li>
+        <li><a href="capacitaciones.html">Capacitaciones</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="anuario.html">Anuario</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ════════════════════════════════════════
+     GALERÍA ESCOLAR
+════════════════════════════════════════ -->
+<section id="galeria" class="seccion sec-gris">
+  <div class="contenedor">
+    <h2 class="sec-titulo">Galería Escolar</h2>
+    <p class="subtitulo">Momentos que forman nuestra historia · Mínimo 10 fotos por categoría</p>
+
+    <div class="gal-filtros">
+      <button class="gal-btn on"  onclick="filtrarGal(this,'todos')">Todos</button>
+      <button class="gal-btn"     onclick="filtrarGal(this,'eventos')">Eventos</button>
+      <button class="gal-btn"     onclick="filtrarGal(this,'cultural')">Cultural</button>
+      <button class="gal-btn"     onclick="filtrarGal(this,'vida')">Vida Estudiantil</button>
+    </div>
+
+    <div class="gal-grid" id="gal-grid">
+
+      <!-- EVENTOS -->
+      <div class="gal-item" data-cat="eventos"><img src="imagenes/galeria/eventos/dia del niño.jpg" alt="Día del Niño" /><span class="gal-label">Eventos</span></div>
+      <div class="gal-item" data-cat="eventos"><img src="imagenes/galeria/eventos/dia del niño 2.jpg" alt="Día del Niño 2" /><span class="gal-label">Eventos</span></div>
+      <div class="gal-item" data-cat="eventos"><img src="imagenes/galeria/eventos/dia del niño 30 de abril 2026.jpg" alt="Día del Niño 30 Abril 2026" /><span class="gal-label">Eventos</span></div>
+      <div class="gal-item" data-cat="eventos"><img src="imagenes/galeria/eventos/dia del niño 2 30 de abril 2026.jpg" alt="Día del Niño 30 Abril 2026 (2)" /><span class="gal-label">Eventos</span></div>
+
+      <!-- CULTURAL -->
+      <div class="gal-item" data-cat="cultural"><img src="imagenes/galeria/cultural/cultura 1.jpg" alt="Cultural 1" /><span class="gal-label">Cultural</span></div>
+      <div class="gal-item" data-cat="cultural"><img src="imagenes/galeria/cultural/cultura 2.jpg" alt="Cultural 2" /><span class="gal-label">Cultural</span></div>
+      <div class="gal-item" data-cat="cultural"><img src="imagenes/galeria/cultural/cultura 3.jpg" alt="Cultural 3" /><span class="gal-label">Cultural</span></div>
+
+      <!-- VIDA ESTUDIANTIL -->
+      <div class="gal-item" data-cat="vida"><img src="imagenes/galeria/vida/dia de las madres 1.jpg" alt="Día de las Madres" /><span class="gal-label">Vida Estudiantil</span></div>
+      <div class="gal-item" data-cat="vida"><img src="imagenes/galeria/vida/laboratorios 1.jpg" alt="Laboratorios 1" /><span class="gal-label">Vida Estudiantil</span></div>
+      <div class="gal-item" data-cat="vida"><img src="imagenes/galeria/vida/laboratorios 2.jpg" alt="Laboratorios 2" /><span class="gal-label">Vida Estudiantil</span></div>
+      <div class="gal-item" data-cat="vida"><img src="imagenes/galeria/vida/laboratorios 3.jpg" alt="Laboratorios 3" /><span class="gal-label">Vida Estudiantil</span></div>
+      <div class="gal-item" data-cat="vida"><img src="imagenes/galeria/vida/laboratorios 4.jpg" alt="Laboratorios 4" /><span class="gal-label">Vida Estudiantil</span></div>
+      <div class="gal-item" data-cat="vida"><img src="imagenes/galeria/vida/entrega de boletas.jpg" alt="Entrega de Boletas" /><span class="gal-label">Vida Estudiantil</span></div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════ -->
+<footer>
+  <div class="contenedor">
+    <div class="footer-grid">
+
+      <div>
+        <h4>COBACH Plantel 10</h4>
+        <p>Institución de educación media superior comprometida con la formación integral de jóvenes, fomentando valores, conocimiento y competencias para la vida y el trabajo.</p>
+        <div class="footer-redes">
+          <a href="https://www.facebook.com/COBACH10BCS/" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/cobach_10bcs/" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="acerca.html">Acerca de</a></li>
+          <li><a href="instalaciones.html">Instalaciones</a></li>
+          <li><a href="capacitaciones.html">Capacitaciones</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="anuario.html">Anuario Digital</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contacto</h4>
+        <p>
+          <i class="fa fa-map-marker-alt"></i> Palma Senegal S/N, Col. Las Palmas<br />
+          C.P. 23477, Cabo San Lucas, BCS<br /><br />
+          <i class="fa fa-phone"></i> (624) 124-6108<br /><br />
+          <i class="fa fa-envelope"></i> plantel10@cobachbcs.edu.mx<br /><br />
+          <i class="fa fa-globe"></i>
+          <a href="https://www.cobachbcs.edu.mx" target="_blank" rel="noopener">www.cobachbcs.edu.mx</a>
+        </p>
+      </div>
+
+      <div>
+        <h4>Equipo Desarrollador</h4>
+        <p class="footer-creditos">
+          Proyecto desarrollado por:<br />
+          <span>1. [Nombre del integrante 1]</span><br />
+          <span>2. [Nombre del integrante 2]</span><br />
+          <span>3. [Nombre del integrante 3]</span><br />
+          <span>4. [Nombre del integrante 4]</span><br />
+          <span>5. [Nombre del integrante 5]</span><br /><br />
+          Materia: Informática · Grupo: [X]<br />
+          Ciclo escolar 2024–2025
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-bar">
+    <div class="contenedor">
+      &copy; <span id="ano"></span> COBACH Plantel 10 — Todos los derechos reservados.
+      &nbsp;|&nbsp; Los Cabos, Baja California Sur
+    </div>
+  </div>
+</footer>
+
+<button id="btn-top" aria-label="Volver arriba">
+  <i class="fa fa-chevron-up"></i>
+</button>
+
+
+<script>
+document.getElementById('ano').textContent = new Date().getFullYear();
+
+document.getElementById('menu-toggle').addEventListener('click', function () {
+  document.getElementById('nav-menu').classList.toggle('abierto');
+});
+document.querySelectorAll('.nav-menu a').forEach(function (a) {
+  a.addEventListener('click', function () {
+    document.getElementById('nav-menu').classList.remove('abierto');
+  });
+});
+
+(function () {
+  var page = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.nav-menu a').forEach(function (a) {
+    if (a.getAttribute('href') === page) a.classList.add('activo');
+  });
+})();
+
+window.addEventListener('scroll', function () {
+  document.getElementById('btn-top').classList.toggle('vis', window.scrollY > 400);
+});
+document.getElementById('btn-top').addEventListener('click', function () {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+/* ── Filtro de galería ── */
+document.querySelectorAll('.gal-item').forEach(function (i) { i.classList.add('visible'); });
+
+function filtrarGal(btn, cat) {
+  document.querySelectorAll('.gal-btn').forEach(function (b) { b.classList.remove('on'); });
+  btn.classList.add('on');
+  document.querySelectorAll('.gal-item[data-cat]').forEach(function (item) {
+    item.classList.toggle('visible', cat === 'todos' || item.dataset.cat === cat);
+  });
+}
+</script>
+
+</body>
+</html>

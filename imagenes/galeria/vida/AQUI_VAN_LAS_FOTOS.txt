@@ -1,0 +1,3 @@
+CARPETA: GALERÍA / VIDA ESTUDIANTIL
+Mínimo 10 fotos reales de la vida estudiantil diaria (recreos, clases, amigos, etc.)
+Nombres: vida1.jpg, vida2.jpg ... vida10.jpg

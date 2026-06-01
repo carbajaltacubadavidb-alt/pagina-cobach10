@@ -1,0 +1,34 @@
+Alumnos sin carpeta/foto en Grupo A
+=====================================
+Todos los alumnos de la lista están incluidos en el anuario.html.
+
+Los siguientes alumnos no tienen carpeta con fotos — al conseguir sus fotos,
+crea una carpeta con su nombre y agrega el atributo data-fotos en su tarjeta:
+
+ 6. Castro Armenta, Miliane
+ 7. Cruceño Sánchez, Brayan
+ 8. Cruz Luna, Jesús Emmanuel
+ 9. Cruz Rodríguez, Rigoberto
+10. De los Santos Rosales, Alexander
+11. Delgado Valle, Dulce Evelin
+12. Díaz Medina, Carlos Alejandro
+13. Díaz Suárez, Carlos Abraham
+14. Díaz Ramírez, Irvin Daniel
+15. Gómez Rojas, Evelin
+21. López Evaristo, David Asael
+22. López Valle, Valeria
+23. Martínez González, José Sebastián
+24. Martínez Nápoles, Karla Elena
+25. Martínez Santiago, Juan Alberto
+31. Quintanilla Hernández, Ricardo Adonay
+32. Reséndiz Marroquín, Cristofer
+33. Rojas García, César David
+34. Severiano Cisneros, Elcy Cristina
+35. Solano Hernández, Yessica Idahi
+36. Suárez Casimiro, Ramsés Oziel
+37. Tolentino Chautla, Yesica
+38. Valencia Morales, Robin Edahí
+39. Valenzuela García, Citlali
+40. Valenzuela Montalvo, Randall Fabricio
+
+Total sin foto: 25 | En HTML: 44/44 ✓

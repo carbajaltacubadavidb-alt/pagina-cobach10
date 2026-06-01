@@ -1,0 +1,9 @@
+CARPETA: LOGO
+==============
+Coloca aquí el logo oficial del COBACH 10.
+
+Formatos recomendados: .png o .svg (con fondo transparente)
+Nombre sugerido: logo_cobach10.png
+
+Una vez que agregues el logo, actualiza en index.html la ruta:
+  src="imagenes/logo/logo_cobach10.png"

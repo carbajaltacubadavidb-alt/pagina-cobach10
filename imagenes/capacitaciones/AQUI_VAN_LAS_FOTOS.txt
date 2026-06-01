@@ -1,0 +1,4 @@
+CARPETA: CAPACITACIONES
+Una foto representativa por cada capacitación que ofrece el plantel.
+Nombres sugeridos: informatica.jpg, contabilidad.jpg, enfermeria.jpg, turismo.jpg
+Ajusta los nombres según las capacitaciones REALES de tu plantel.
