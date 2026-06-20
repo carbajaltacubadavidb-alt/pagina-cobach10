@@ -7,26 +7,101 @@
   <meta name="description" content="Conoce las instalaciones del COBACH Plantel 10: salones, laboratorios, canchas, biblioteca y más." />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ── MODAL LIGHTBOX INSTALACIONES ── */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, .85);
+      z-index: 99999;
+      justify-content: center;
+      align-items: center;
+      padding: 16px;
+      animation: fadeIn .2s;
+    }
+    .modal-overlay.abierto {
+      display: flex;
+    }
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: rgba(255, 255, 255, .2);
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      font-size: 1.2rem;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background .2s, transform .2s;
+      color: #fff;
+    }
+    .modal-close:hover {
+      background: rgba(255, 255, 255, .35);
+      transform: scale(1.05);
+    }
+    #lightbox-img {
+      max-width: 95%;
+      max-height: 85vh;
+      object-fit: contain;
+      border-radius: 8px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+      animation: zoomIn 0.25s ease-out;
+    }
+    .inst-foto img {
+      cursor: zoom-in;
+      transition: opacity .25s ease;
+    }
+    .inst-foto img:hover {
+      opacity: 0.85;
+    }
+    /* Flechas del lightbox */
+    .lb-flecha {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255,255,255,.18);
+      border: none;
+      color: #fff;
+      font-size: 1.8rem;
+      padding: 14px 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background .2s;
+      z-index: 10;
+      display: none;
+      align-items: center;
+      justify-content: center;
+    }
+    .lb-flecha:hover { background: rgba(255,255,255,.38); }
+    #lb-prev-i { left: 14px; }
+    #lb-next-i { right: 14px; }
+    #lb-count-i {
+      position: absolute;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: rgba(255,255,255,.75);
+      font-size: .85rem;
+      letter-spacing: .4px;
+      pointer-events: none;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes zoomIn {
+      from { transform: scale(0.9); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
 </head>
 <body>
-
-<!-- ░░ TOPBAR ░░ -->
-<div class="topbar">
-  <div class="contenedor">
-    <span>
-      <i class="fa fa-phone"></i> (624) 124-6108
-      &nbsp;|&nbsp;
-      <i class="fa fa-envelope"></i> plantel10@cobachbcs.edu.mx
-    </span>
-    <span class="redes">
-      Síguenos:
-      <a href="https://www.facebook.com/COBACH10BCS/" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
-      <a href="https://www.instagram.com/cobach_10bcs/" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-      <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-      <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-    </span>
-  </div>
-</div>
 
 <!-- ░░ HEADER / NAVEGACIÓN ░░ -->
 <header>
@@ -70,16 +145,16 @@
       <!-- Salones de clase -->
       <div class="inst-card anim-fade">
         <div class="inst-fotos">
-          <div class="inst-foto"><img src="imagenes/instalaciones/salones/salon1.jpg" alt="Salón de clase 1" onerror="this.outerHTML='<span>📷 salon1</span>'" /></div>
-          <div class="inst-foto"><img src="imagenes/instalaciones/salones/salon2.jpg" alt="Salón de clase 2" onerror="this.outerHTML='<span>📷 salon2</span>'" /></div>
-          <div class="inst-foto"><img src="imagenes/instalaciones/salones/salon3.jpg" alt="Salón de clase 3" onerror="this.outerHTML='<span>📷 salon3</span>'" /></div>
+          <div class="inst-foto"><img src="imagenes/instalaciones/salones/salon1.jpg" alt="Salón de clase" onerror="this.style.display='none'" /></div>
+          <div class="inst-foto"><img src="imagenes/instalaciones/salones/salon2.jpg" alt="Salón de clase" onerror="this.style.display='none'" /></div>
+          <div class="inst-foto"><img src="imagenes/instalaciones/salones/salon3.jpg" alt="Salón de clase" onerror="this.style.display='none'" /></div>
         </div>
         <div class="inst-body">
           <h3>🏫 Salones de Clase</h3>
           <p class="inst-desc">Salones amplios y bien iluminados donde se imparten las clases de las distintas asignaturas del plan de estudios. Cada aula está equipada con pizarrón, mobiliario escolar y ventilación adecuada para garantizar un ambiente de aprendizaje cómodo.</p>
           <div class="inst-func">
             <strong>Actividades que se realizan:</strong>
-            Clases teóricas, exposiciones, debates, trabajo en equipo, evaluaciones.
+            Clases teóricas, exposiciones, debates, trabajo en equipo, evaluaciones y actividades de aprendizaje colaborativo.
           </div>
         </div>
       </div>
@@ -131,23 +206,6 @@
           <div class="inst-func">
             <strong>Actividades que se realizan:</strong>
             Consulta bibliográfica, investigación escolar, lectura independiente, apoyo a tareas y acceso a material de estudio complementario.
-          </div>
-        </div>
-      </div>
-
-      <!-- Talleres -->
-      <div class="inst-card anim-fade">
-        <div class="inst-fotos">
-          <div class="inst-foto"><img src="imagenes/instalaciones/talleres/taller1.jpg" alt="Taller 1" onerror="this.outerHTML='<span>📷 taller1</span>'" /></div>
-          <div class="inst-foto"><img src="imagenes/instalaciones/talleres/taller2.jpg" alt="Taller 2" onerror="this.outerHTML='<span>📷 taller2</span>'" /></div>
-          <div class="inst-foto"><img src="imagenes/instalaciones/talleres/taller3.jpg" alt="Taller 3" onerror="this.outerHTML='<span>📷 taller3</span>'" /></div>
-        </div>
-        <div class="inst-body">
-          <h3>🔧 Talleres</h3>
-          <p class="inst-desc">Espacios de práctica de las capacitaciones técnicas del plantel, donde los alumnos de Servicios Turísticos y Primeros Auxilios realizan sus actividades formativas. Cuentan con el equipo necesario para la enseñanza aplicada y el desarrollo de habilidades prácticas.</p>
-          <div class="inst-func">
-            <strong>Actividades que se realizan:</strong>
-            Prácticas de capacitación, servicio de cocina y salón, atención a pacientes, simulacros de primeros auxilios y proyectos técnicos.
           </div>
         </div>
       </div>
@@ -255,13 +313,15 @@
         <h4>Equipo Desarrollador</h4>
         <p class="footer-creditos">
           Proyecto desarrollado por:<br />
-          <span>1. [Nombre del integrante 1]</span><br />
-          <span>2. [Nombre del integrante 2]</span><br />
-          <span>3. [Nombre del integrante 3]</span><br />
-          <span>4. [Nombre del integrante 4]</span><br />
-          <span>5. [Nombre del integrante 5]</span><br /><br />
-          Materia: Informática · Grupo: [X]<br />
-          Ciclo escolar 2024–2025
+          <span>1. David Carbajal Tacuba</span><br />
+          <span>2. Claude — Asistente IA (Anthropic)</span><br />
+          <span>3. Yahel Guillermo Arce Valdez</span><br />
+          <span>4. Karla Elena Martínez Nápoles</span><br />
+          <span>5. Josué Jonathan Mozo García</span><br />
+          <span>6. Cristopher Apolonio Díaz</span><br />
+          <span>7. Samantha Anahí Guerrero Mayo</span><br /><br />
+          Materia: Informática · Grupo: 6°A<br />
+          Ciclo escolar 2023–2026
         </p>
       </div>
 
@@ -280,6 +340,15 @@
   <i class="fa fa-chevron-up"></i>
 </button>
 
+
+<!-- ░░ MODAL LIGHTBOX INSTALACIONES ── -->
+<div id="modal-lightbox" class="modal-overlay" onclick="if(event.target===this)cerrarLightbox()">
+  <button class="modal-close" onclick="cerrarLightbox()" title="Cerrar"><i class="fa fa-times"></i></button>
+  <button id="lb-prev-i" class="lb-flecha" onclick="moverInst(-1)" title="Anterior"><i class="fa fa-chevron-left"></i></button>
+  <img id="lightbox-img" src="" alt="Imagen ampliada" onclick="event.stopPropagation()" />
+  <button id="lb-next-i" class="lb-flecha" onclick="moverInst(1)"  title="Siguiente"><i class="fa fa-chevron-right"></i></button>
+  <span id="lb-count-i"></span>
+</div>
 
 <script>
 document.getElementById('ano').textContent = new Date().getFullYear();
@@ -317,6 +386,49 @@ var obsFade = new IntersectionObserver(function (entries) {
   });
 }, { threshold: 0.1 });
 document.querySelectorAll('.anim-fade').forEach(function (el) { obsFade.observe(el); });
+
+/* ── Lightbox con flechas ── */
+var _instFotos = [], _instIdx = 0;
+
+function abrirLightbox(src, clickedImg) {
+  var grupo = clickedImg ? clickedImg.closest('.inst-fotos') : null;
+  _instFotos = grupo
+    ? Array.from(grupo.querySelectorAll('img')).map(function(i){ return i.src; })
+    : [src];
+  _instIdx = _instFotos.findIndex(function(s){ return s === src; });
+  if (_instIdx < 0) _instIdx = 0;
+  _mostrarInst();
+  document.getElementById('modal-lightbox').classList.add('abierto');
+  document.body.style.overflow = 'hidden';
+}
+function _mostrarInst() {
+  document.getElementById('lightbox-img').src = _instFotos[_instIdx];
+  var multi = _instFotos.length > 1;
+  document.getElementById('lb-prev-i').style.display = multi ? 'flex' : 'none';
+  document.getElementById('lb-next-i').style.display = multi ? 'flex' : 'none';
+  document.getElementById('lb-count-i').textContent = multi ? (_instIdx + 1) + ' / ' + _instFotos.length : '';
+}
+function moverInst(d) {
+  _instIdx = (_instIdx + d + _instFotos.length) % _instFotos.length;
+  _mostrarInst();
+}
+function cerrarLightbox() {
+  document.getElementById('modal-lightbox').classList.remove('abierto');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', function (e) {
+  if (!document.getElementById('modal-lightbox').classList.contains('abierto')) return;
+  if (e.key === 'Escape')      cerrarLightbox();
+  if (e.key === 'ArrowLeft')   moverInst(-1);
+  if (e.key === 'ArrowRight')  moverInst(1);
+});
+
+/* ── Click en foto para abrir Lightbox ── */
+document.querySelectorAll('.inst-foto img').forEach(function (img) {
+  img.addEventListener('click', function () {
+    abrirLightbox(img.src, img);
+  });
+});
 </script>
 
 </body>

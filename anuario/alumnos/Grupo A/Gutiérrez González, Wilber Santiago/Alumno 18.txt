@@ -1,7 +1,9 @@
 Grupo: 6-A
 Nombre del Alumno: Wilber Santiago Gutiérrez González
+
 Fecha de nacimiento: 11/05/2008
-Capacitación y paquete: Informatica, sociales 
+Capacitación y paquete: Informatica, sociales
+ 
 Experiencia en COBACH
 Asignatura favorita, anécdota, actividades favoritas, experiencias.
 Energía y sus interacciones (Pimentel) y las practicas de laboratorio.

@@ -7,26 +7,24 @@
   <meta name="description" content="Capacitaciones y paquetes técnicos del COBACH Plantel 10." />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .cap-fotos{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+    .cap-fotos img{width:calc(33.33% - 6px);aspect-ratio:4/3;object-fit:cover;border-radius:8px;cursor:pointer;transition:opacity .2s,transform .15s;border:2px solid transparent}
+    .cap-fotos img:hover{opacity:.88;transform:scale(1.03);border-color:var(--primario,#1565c0)}
+    @media(max-width:600px){.cap-fotos img{width:calc(50% - 4px)}}
+    /* Lightbox */
+    #lb-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:9999;align-items:center;justify-content:center}
+    #lb-overlay.on{display:flex}
+    #lb-overlay img{max-width:82vw;max-height:88vh;border-radius:10px;box-shadow:0 16px 48px rgba(0,0,0,.6);user-select:none}
+    #lb-close{position:absolute;top:16px;right:20px;color:#fff;font-size:2rem;cursor:pointer;background:none;border:none;line-height:1}
+    #lb-close:hover{opacity:.7}
+    .lb-flecha-c{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.18);border:none;color:#fff;font-size:1.8rem;padding:14px 18px;border-radius:10px;cursor:pointer;transition:background .2s;display:none;align-items:center;justify-content:center}
+    .lb-flecha-c:hover{background:rgba(255,255,255,.38)}
+    #lb-prev-c{left:14px} #lb-next-c{right:14px}
+    #lb-count-c{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.75);font-size:.85rem;pointer-events:none}
+  </style>
 </head>
 <body>
-
-<!-- ░░ TOPBAR ░░ -->
-<div class="topbar">
-  <div class="contenedor">
-    <span>
-      <i class="fa fa-phone"></i> (624) 124-6108
-      &nbsp;|&nbsp;
-      <i class="fa fa-envelope"></i> plantel10@cobachbcs.edu.mx
-    </span>
-    <span class="redes">
-      Síguenos:
-      <a href="https://www.facebook.com/COBACH10BCS/" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
-      <a href="https://www.instagram.com/cobach_10bcs/" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-      <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-      <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-    </span>
-  </div>
-</div>
 
 <!-- ░░ HEADER / NAVEGACIÓN ░░ -->
 <header>
@@ -72,39 +70,63 @@
       <!-- Capacitación 1: Computación -->
       <div class="cap-card anim-fade">
         <div class="cap-img">
-          <img src="imagenes/capacitaciones/capacitacion1.jpg" alt="Capacitación en Computación"
+          <img src="Capacitaciones y paquetes/Computación e Informática/514275705_1268095851789386_8128315273808863059_n.jpg" alt="Capacitación en Computación e Informática"
                onerror="this.outerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;font-size:3.5rem;\'>💻</div>'" />
         </div>
         <div class="cap-body">
           <span class="cap-badge">Capacitación</span>
           <h3>Computación e Informática</h3>
           <p>Formación integral en tecnologías de la información. Los alumnos aprenden desde el <strong>mantenimiento y reparación de equipos de cómputo</strong>, instalación de sistemas operativos y software, hasta el uso profesional de herramientas de productividad como <strong>Microsoft Word y Excel</strong>. Se incluye diseño gráfico digital con <strong>CorelDRAW y Adobe Photoshop</strong>, desarrollo web con <strong>HTML y CSS</strong>, y una introducción al uso de <strong>Inteligencia Artificial</strong> en contextos cotidianos y laborales. Una capacitación que forma al estudiante con habilidades tecnológicas aplicables en múltiples entornos.</p>
+          <div class="cap-fotos">
+            <img src="Capacitaciones y paquetes/Computación e Informática/514275705_1268095851789386_8128315273808863059_n.jpg" alt="Computación 1" onclick="abrirFotoGrande(this.src, this)" />
+            <img src="Capacitaciones y paquetes/Computación e Informática/514397257_1268095831789388_3703448274493221444_n.jpg" alt="Computación 2" onclick="abrirFotoGrande(this.src, this)" />
+            <img src="Capacitaciones y paquetes/Computación e Informática/558999810_1268095798456058_4824162608198762658_n.jpg" alt="Computación 3" onclick="abrirFotoGrande(this.src, this)" />
+            <img src="Capacitaciones y paquetes/Computación e Informática/559013637_1268095871789384_7837156119726865836_n.jpg" alt="Computación 4" onclick="abrirFotoGrande(this.src, this)" />
+            <img src="Capacitaciones y paquetes/Computación e Informática/560066946_1268095878456050_258886329622905811_n.jpg" alt="Computación 5" onclick="abrirFotoGrande(this.src, this)" />
+            <img src="Capacitaciones y paquetes/Computación e Informática/595209036_1313512063914431_7254813910091773091_n.jpg" alt="Computación 6" onclick="abrirFotoGrande(this.src, this)" />
+            <img src="Capacitaciones y paquetes/Computación e Informática/595844503_1313512280581076_8898821871016064740_n.jpg" alt="Computación 7" onclick="abrirFotoGrande(this.src, this)" />
+          </div>
         </div>
       </div>
 
       <!-- Capacitación 2: Servicios Turísticos (Hotelería) -->
       <div class="cap-card anim-fade">
         <div class="cap-img">
-          <img src="imagenes/capacitaciones/capacitacion2.jpg" alt="Capacitación en Servicios Turísticos"
+          <img src="Capacitaciones y paquetes/Servicios turisticos/600868475_1320158116583159_3107325117740950814_n.jpg" alt="Capacitación en Servicios Turísticos"
                onerror="this.outerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;font-size:3.5rem;\'>🏨</div>'" />
         </div>
         <div class="cap-body">
           <span class="cap-badge">Capacitación</span>
           <h3>Servicios Turísticos y Hotelería</h3>
           <p>Capacitación orientada al dinámico sector de la hospitalidad y el turismo. Los estudiantes reciben formación en <strong>atención y servicio al cliente</strong>, protocolos de hospitalidad, operaciones de recepción y hospedaje, así como <strong>técnicas de cocina y servicio de salón</strong>. Se abordan estándares de calidad en alimentos y bebidas, gestión básica de establecimientos turísticos y buenas prácticas en la industria. Ideal para quienes desean desarrollarse en hoteles, restaurantes, agencias de viaje y el turismo en general.</p>
+          <div class="cap-fotos">
+            <img src="Capacitaciones y paquetes/Servicios turisticos/600868475_1320158116583159_3107325117740950814_n.jpg" alt="Turismo 1" onclick="abrirFotoGrande(this.src, this)" />
+            <img src="Capacitaciones y paquetes/Servicios turisticos/639617758_1372714491327521_170752908043222081_n.jpg" alt="Turismo 2" onclick="abrirFotoGrande(this.src, this)" />
+            <img src="Capacitaciones y paquetes/Servicios turisticos/640329953_1372714631327507_6029151479152737649_n.jpg" alt="Turismo 3" onclick="abrirFotoGrande(this.src, this)" />
+            <img src="Capacitaciones y paquetes/Servicios turisticos/641499789_1372714167994220_3812868151174651997_n.jpg" alt="Turismo 4" onclick="abrirFotoGrande(this.src, this)" />
+            <img src="Capacitaciones y paquetes/Servicios turisticos/642168189_1376057364326567_1618888367993570752_n.jpg" alt="Turismo 5" onclick="abrirFotoGrande(this.src, this)" />
+            <img src="Capacitaciones y paquetes/Servicios turisticos/642366953_1376245907641046_2241942077247244319_n.jpg" alt="Turismo 6" onclick="abrirFotoGrande(this.src, this)" />
+            <img src="Capacitaciones y paquetes/Servicios turisticos/644332334_1376245134307790_3766515793905475958_n.jpg" alt="Turismo 7" onclick="abrirFotoGrande(this.src, this)" />
+            <img src="Capacitaciones y paquetes/Servicios turisticos/645291094_1376057294326574_5314567280313696992_n.jpg" alt="Turismo 8" onclick="abrirFotoGrande(this.src, this)" />
+          </div>
         </div>
       </div>
 
       <!-- Capacitación 3: Primeros Auxilios -->
       <div class="cap-card anim-fade">
         <div class="cap-img">
-          <img src="imagenes/capacitaciones/capacitacion3.jpg" alt="Capacitación en Primeros Auxilios"
+          <img src="Capacitaciones y paquetes/Primeros auxilios/634362384_1367836568481980_1479249856657588137_n.jpg" alt="Capacitación en Primeros Auxilios"
                onerror="this.outerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;font-size:3.5rem;\'>🩺</div>'" />
         </div>
         <div class="cap-body">
           <span class="cap-badge">Capacitación</span>
           <h3>Primeros Auxilios y Salud</h3>
           <p>Formación con fuerte orientación a las ciencias de la salud. Los alumnos estudian <strong>estructuras químicas de compuestos biológicos</strong>, fundamentos de anatomía y fisiología humana, toma de <strong>signos vitales</strong>, técnicas de vendaje y manejo de heridas, reanimación cardiopulmonar (RCP), atención de fracturas y urgencias médicas básicas. Se hace énfasis en la práctica clínica, fomentando la responsabilidad y la vocación de servicio. Una base sólida para quienes aspiran a carreras en el área de la salud.</p>
+          <div class="cap-fotos">
+            <img src="Capacitaciones y paquetes/Primeros auxilios/634362384_1367836568481980_1479249856657588137_n.jpg" alt="Primeros Auxilios 1" onclick="abrirFotoGrande(this.src, this)" />
+            <img src="Capacitaciones y paquetes/Primeros auxilios/634779185_1367836705148633_8642420205939463500_n.jpg" alt="Primeros Auxilios 2" onclick="abrirFotoGrande(this.src, this)" />
+            <img src="Capacitaciones y paquetes/Primeros auxilios/636687225_1367836591815311_4476808509235631916_n.jpg" alt="Primeros Auxilios 3" onclick="abrirFotoGrande(this.src, this)" />
+          </div>
         </div>
       </div>
 
@@ -119,39 +141,54 @@
       <!-- Paquete 1: Exactas -->
       <div class="cap-card anim-fade">
         <div class="cap-img">
-          <img src="imagenes/capacitaciones/paquete_exactas.jpg" alt="Paquete Exactas"
+          <img src="Capacitaciones y paquetes/Exactas/IMG-20250922-WA0005.jpg" alt="Paquete Exactas"
                onerror="this.outerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;font-size:3.5rem;\'>📐</div>'" />
         </div>
         <div class="cap-body">
           <span class="cap-badge" style="background:#e53935;">Paquete</span>
           <h3>Exactas</h3>
           <p>Orientado al pensamiento lógico-matemático y científico. Se profundiza en <strong>cálculo diferencial, álgebra, geometría analítica, estadística y probabilidad</strong>, así como en <strong>física avanzada</strong> con resolución de problemas aplicados. Este paquete desarrolla la capacidad de análisis, razonamiento abstracto y resolución de problemas complejos. Ideal para estudiantes que deseen ingresar a carreras de <strong>ingeniería, matemáticas, arquitectura, física, tecnologías de la información</strong> o cualquier área que demande una sólida formación científica.</p>
+          <div class="cap-fotos">
+            <img src="Capacitaciones y paquetes/Exactas/IMG-20250922-WA0005.jpg" alt="Exactas 1" onclick="abrirFotoGrande(this.src, this)" />
+            <img src="Capacitaciones y paquetes/Exactas/IMG-20260224-WA0006.jpg" alt="Exactas 2" onclick="abrirFotoGrande(this.src, this)" />
+            <img src="Capacitaciones y paquetes/Exactas/IMG-20260227-WA0052.jpg" alt="Exactas 3" onclick="abrirFotoGrande(this.src, this)" />
+            <img src="Capacitaciones y paquetes/Exactas/IMG-20260603-WA0005.jpg" alt="Exactas 4" onclick="abrirFotoGrande(this.src, this)" />
+          </div>
         </div>
       </div>
 
       <!-- Paquete 2: Sociales -->
       <div class="cap-card anim-fade">
         <div class="cap-img">
-          <img src="imagenes/capacitaciones/paquete_sociales.jpg" alt="Paquete Sociales"
+          <img src="Capacitaciones y paquetes/Sociales y Humanidades/631653572_1363665995565704_7617411079963862399_n.jpg" alt="Paquete Sociales y Humanidades"
                onerror="this.outerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;font-size:3.5rem;\'>🎭</div>'" />
         </div>
         <div class="cap-body">
           <span class="cap-badge" style="background:#7b1fa2;">Paquete</span>
           <h3>Sociales y Humanidades</h3>
           <p>Enfocado en las ciencias sociales, las humanidades y el desarrollo de habilidades comunicativas. Se potencian capacidades de <strong>expresión oral y escrita, oratoria, debate y hablar en público</strong>, junto con el estudio de historia, filosofía, economía, derecho y <strong>expresión artística</strong>. Este paquete forma perfiles con vocación humanista, liderazgo social y carisma, perfectos para entornos donde la comunicación efectiva y las relaciones humanas son clave. Ideal para carreras de <strong>derecho, comunicación, pedagogía, psicología, administración y ciencias políticas</strong>.</p>
+          <div class="cap-fotos">
+            <img src="Capacitaciones y paquetes/Sociales y Humanidades/631653572_1363665995565704_7617411079963862399_n.jpg" alt="Sociales 1" onclick="abrirFotoGrande(this.src, this)" />
+            <img src="Capacitaciones y paquetes/Sociales y Humanidades/632470578_1363666068899030_7949825719612287463_n.jpg" alt="Sociales 2" onclick="abrirFotoGrande(this.src, this)" />
+            <img src="Capacitaciones y paquetes/Sociales y Humanidades/634658671_1363665355565768_8621060286483804185_n.jpg" alt="Sociales 3" onclick="abrirFotoGrande(this.src, this)" />
+          </div>
         </div>
       </div>
 
       <!-- Paquete 3: Naturales -->
       <div class="cap-card anim-fade">
         <div class="cap-img">
-          <img src="imagenes/capacitaciones/paquete_naturales.jpg" alt="Paquete Naturales"
+          <img src="Capacitaciones y paquetes/Ciencias Naturales/640390980_1374622387803398_790736614028599776_n.jpg" alt="Paquete Ciencias Naturales"
                onerror="this.outerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;font-size:3.5rem;\'>🧬</div>'" />
         </div>
         <div class="cap-body">
           <span class="cap-badge" style="background:#2e7d32;">Paquete</span>
           <h3>Ciencias Naturales</h3>
           <p>Orientado a las ciencias de la vida y la salud. Se abordan con profundidad <strong>biología celular y molecular, química orgánica e inorgánica, anatomía y fisiología humana, ecología</strong> y <strong>fundamentos de medicina general</strong>. Los estudiantes desarrollan una visión científica del ser vivo, los ecosistemas y los procesos de salud-enfermedad. Diseñado para quienes aspiran a carreras en <strong>medicina, enfermería, odontología, biología, veterinaria, nutrición</strong> u otras disciplinas relacionadas con las ciencias de la vida.</p>
+          <div class="cap-fotos">
+            <img src="Capacitaciones y paquetes/Ciencias Naturales/640390980_1374622387803398_790736614028599776_n.jpg" alt="Naturales 1" onclick="abrirFotoGrande(this.src, this)" />
+            <img src="Capacitaciones y paquetes/Ciencias Naturales/642285926_1374622414470062_3202528699095015446_n.jpg" alt="Naturales 2" onclick="abrirFotoGrande(this.src, this)" />
+          </div>
         </div>
       </div>
 
@@ -207,13 +244,15 @@
         <h4>Equipo Desarrollador</h4>
         <p class="footer-creditos">
           Proyecto desarrollado por:<br />
-          <span>1. [Nombre del integrante 1]</span><br />
-          <span>2. [Nombre del integrante 2]</span><br />
-          <span>3. [Nombre del integrante 3]</span><br />
-          <span>4. [Nombre del integrante 4]</span><br />
-          <span>5. [Nombre del integrante 5]</span><br /><br />
-          Materia: Informática · Grupo: [X]<br />
-          Ciclo escolar 2024–2025
+          <span>1. David Carbajal Tacuba</span><br />
+          <span>2. Claude — Asistente IA (Anthropic)</span><br />
+          <span>3. Yahel Guillermo Arce Valdez</span><br />
+          <span>4. Karla Elena Martínez Nápoles</span><br />
+          <span>5. Josué Jonathan Mozo García</span><br />
+          <span>6. Cristopher Apolonio Díaz</span><br />
+          <span>7. Samantha Anahí Guerrero Mayo</span><br /><br />
+          Materia: Informática · Grupo: 6°A<br />
+          Ciclo escolar 2023–2026
         </p>
       </div>
 
@@ -227,6 +266,15 @@
     </div>
   </div>
 </footer>
+
+<!-- Lightbox -->
+<div id="lb-overlay" onclick="cerrarLb()">
+  <button id="lb-close"   onclick="cerrarLb()" title="Cerrar">&times;</button>
+  <button id="lb-prev-c"  class="lb-flecha-c" onclick="event.stopPropagation();moverCap(-1)" title="Anterior"><i class="fa fa-chevron-left"></i></button>
+  <img    id="lb-img"     src="" alt="Foto ampliada" onclick="event.stopPropagation()" />
+  <button id="lb-next-c"  class="lb-flecha-c" onclick="event.stopPropagation();moverCap(1)"  title="Siguiente"><i class="fa fa-chevron-right"></i></button>
+  <span   id="lb-count-c"></span>
+</div>
 
 <button id="btn-top" aria-label="Volver arriba">
   <i class="fa fa-chevron-up"></i>
@@ -259,6 +307,7 @@ document.getElementById('btn-top').addEventListener('click', function () {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
+/* ── Fade-in al hacer scroll ── */
 var obsFade = new IntersectionObserver(function (entries) {
   entries.forEach(function (e) {
     if (e.isIntersecting) {
@@ -268,6 +317,43 @@ var obsFade = new IntersectionObserver(function (entries) {
   });
 }, { threshold: 0.1 });
 document.querySelectorAll('.anim-fade').forEach(function (el) { obsFade.observe(el); });
+
+/* ── Lightbox con flechas ── */
+var _capFotos = [], _capIdx = 0;
+
+function abrirFotoGrande(src, clickedImg) {
+  var grupo = clickedImg ? clickedImg.closest('.cap-fotos') : null;
+  _capFotos = grupo
+    ? Array.from(grupo.querySelectorAll('img')).map(function(i){ return i.src; })
+    : [src];
+  _capIdx = _capFotos.findIndex(function(s){ return s === src; });
+  if (_capIdx < 0) _capIdx = 0;
+  _mostrarCap();
+  document.getElementById('lb-overlay').classList.add('on');
+  document.body.style.overflow = 'hidden';
+}
+function _mostrarCap() {
+  document.getElementById('lb-img').src = _capFotos[_capIdx];
+  var multi = _capFotos.length > 1;
+  document.getElementById('lb-prev-c').style.display = multi ? 'flex' : 'none';
+  document.getElementById('lb-next-c').style.display = multi ? 'flex' : 'none';
+  document.getElementById('lb-count-c').textContent  = multi ? (_capIdx + 1) + ' / ' + _capFotos.length : '';
+}
+function moverCap(d) {
+  _capIdx = (_capIdx + d + _capFotos.length) % _capFotos.length;
+  _mostrarCap();
+}
+function cerrarLb() {
+  document.getElementById('lb-overlay').classList.remove('on');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', function(e) {
+  if (!document.getElementById('lb-overlay').classList.contains('on')) return;
+  if (e.key === 'Escape')     cerrarLb();
+  if (e.key === 'ArrowLeft')  moverCap(-1);
+  if (e.key === 'ArrowRight') moverCap(1);
+});
 </script>
 
-</bo
+</body>
+</html>

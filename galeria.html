@@ -7,26 +7,22 @@
   <meta name="description" content="Galería escolar del COBACH Plantel 10: eventos, deportes, concursos, cultura y vida estudiantil." />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .gal-item img{cursor:zoom-in}
+    /* Lightbox */
+    #lb{display:none;position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:9999;align-items:center;justify-content:center}
+    #lb.on{display:flex}
+    #lb-img{max-width:92vw;max-height:88vh;border-radius:10px;box-shadow:0 16px 48px rgba(0,0,0,.5);user-select:none}
+    #lb-close{position:absolute;top:14px;right:18px;background:none;border:none;color:#fff;font-size:2.2rem;cursor:pointer;line-height:1;opacity:.8}
+    #lb-close:hover{opacity:1}
+    #lb-prev,#lb-next{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.15);border:none;color:#fff;font-size:1.6rem;padding:12px 16px;border-radius:8px;cursor:pointer;transition:background .2s}
+    #lb-prev{left:12px} #lb-next{right:12px}
+    #lb-prev:hover,#lb-next:hover{background:rgba(255,255,255,.3)}
+    #lb-counter{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.7);font-size:.85rem;letter-spacing:.5px}
+    @media(max-width:600px){#lb-prev,#lb-next{padding:8px 10px;font-size:1.2rem}}
+  </style>
 </head>
 <body>
-
-<!-- ░░ TOPBAR ░░ -->
-<div class="topbar">
-  <div class="contenedor">
-    <span>
-      <i class="fa fa-phone"></i> (624) 124-6108
-      &nbsp;|&nbsp;
-      <i class="fa fa-envelope"></i> plantel10@cobachbcs.edu.mx
-    </span>
-    <span class="redes">
-      Síguenos:
-      <a href="https://www.facebook.com/COBACH10BCS/" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
-      <a href="https://www.instagram.com/cobach_10bcs/" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-      <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-      <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-    </span>
-  </div>
-</div>
 
 <!-- ░░ HEADER / NAVEGACIÓN ░░ -->
 <header>
@@ -69,6 +65,8 @@
       <button class="gal-btn on"  onclick="filtrarGal(this,'todos')">Todos</button>
       <button class="gal-btn"     onclick="filtrarGal(this,'eventos')">Eventos</button>
       <button class="gal-btn"     onclick="filtrarGal(this,'cultural')">Cultural</button>
+      <button class="gal-btn"     onclick="filtrarGal(this,'deportes')">Deportes</button>
+      <button class="gal-btn"     onclick="filtrarGal(this,'concursos')">Concursos</button>
       <button class="gal-btn"     onclick="filtrarGal(this,'vida')">Vida Estudiantil</button>
     </div>
 
@@ -79,11 +77,60 @@
       <div class="gal-item" data-cat="eventos"><img src="imagenes/galeria/eventos/dia del niño 2.jpg" alt="Día del Niño 2" /><span class="gal-label">Eventos</span></div>
       <div class="gal-item" data-cat="eventos"><img src="imagenes/galeria/eventos/dia del niño 30 de abril 2026.jpg" alt="Día del Niño 30 Abril 2026" /><span class="gal-label">Eventos</span></div>
       <div class="gal-item" data-cat="eventos"><img src="imagenes/galeria/eventos/dia del niño 2 30 de abril 2026.jpg" alt="Día del Niño 30 Abril 2026 (2)" /><span class="gal-label">Eventos</span></div>
+      <div class="gal-item" data-cat="eventos"><img src="imagenes/galeria/eventos/598296771_1320137413251896_7321497534831010561_n.jpg" alt="Evento escolar" /><span class="gal-label">Eventos</span></div>
+      <div class="gal-item" data-cat="eventos"><img src="imagenes/galeria/eventos/600220168_1320158426583128_3688890056581376850_n.jpg" alt="Evento escolar" /><span class="gal-label">Eventos</span></div>
+      <div class="gal-item" data-cat="eventos"><img src="imagenes/galeria/eventos/603076156_1320140093251628_8696607395248725712_n.jpg" alt="Evento escolar" /><span class="gal-label">Eventos</span></div>
+      <div class="gal-item" data-cat="eventos"><img src="imagenes/galeria/eventos/603099960_1320140169918287_8011809390522311951_n.jpg" alt="Evento escolar" /><span class="gal-label">Eventos</span></div>
+      <div class="gal-item" data-cat="eventos"><img src="imagenes/galeria/eventos/631711276_1364282665504037_5644436574925483526_n.jpg" alt="Evento escolar" /><span class="gal-label">Eventos</span></div>
+      <div class="gal-item" data-cat="eventos"><img src="imagenes/galeria/eventos/633891326_1364280865504217_2121928275570364872_n.jpg" alt="Evento escolar" /><span class="gal-label">Eventos</span></div>
+      <div class="gal-item" data-cat="eventos"><img src="imagenes/galeria/eventos/648235922_1381564900442480_6292677800975237375_n.jpg" alt="Evento escolar" /><span class="gal-label">Eventos</span></div>
+      <div class="gal-item" data-cat="eventos"><img src="imagenes/galeria/eventos/648531115_1381565373775766_5248994116214641346_n.jpg" alt="Evento escolar" /><span class="gal-label">Eventos</span></div>
+      <div class="gal-item" data-cat="eventos"><img src="imagenes/galeria/eventos/648860308_1381565320442438_8336842227471555477_n.jpg" alt="Evento escolar" /><span class="gal-label">Eventos</span></div>
+      <div class="gal-item" data-cat="eventos"><img src="imagenes/galeria/eventos/656199625_1396225715643065_382733375242646300_n.jpg" alt="Evento escolar" /><span class="gal-label">Eventos</span></div>
+      <div class="gal-item" data-cat="eventos"><img src="imagenes/galeria/eventos/658166450_1397341068864863_8760846854243064665_n.jpg" alt="Evento escolar" /><span class="gal-label">Eventos</span></div>
 
       <!-- CULTURAL -->
       <div class="gal-item" data-cat="cultural"><img src="imagenes/galeria/cultural/cultura 1.jpg" alt="Cultural 1" /><span class="gal-label">Cultural</span></div>
       <div class="gal-item" data-cat="cultural"><img src="imagenes/galeria/cultural/cultura 2.jpg" alt="Cultural 2" /><span class="gal-label">Cultural</span></div>
       <div class="gal-item" data-cat="cultural"><img src="imagenes/galeria/cultural/cultura 3.jpg" alt="Cultural 3" /><span class="gal-label">Cultural</span></div>
+      <div class="gal-item" data-cat="cultural"><img src="imagenes/galeria/cultural/IMG-20260517-WA0189.jpg" alt="Actividad cultural" /><span class="gal-label">Cultural</span></div>
+      <div class="gal-item" data-cat="cultural"><img src="imagenes/galeria/cultural/IMG-20260517-WA0190.jpg" alt="Actividad cultural" /><span class="gal-label">Cultural</span></div>
+      <div class="gal-item" data-cat="cultural"><img src="imagenes/galeria/cultural/IMG-20260517-WA0191.jpg" alt="Actividad cultural" /><span class="gal-label">Cultural</span></div>
+      <div class="gal-item" data-cat="cultural"><img src="imagenes/galeria/cultural/IMG-20260517-WA0192.jpg" alt="Actividad cultural" /><span class="gal-label">Cultural</span></div>
+      <div class="gal-item" data-cat="cultural"><img src="imagenes/galeria/cultural/IMG-20260517-WA0193.jpg" alt="Actividad cultural" /><span class="gal-label">Cultural</span></div>
+      <div class="gal-item" data-cat="cultural"><img src="imagenes/galeria/cultural/IMG-20260517-WA0194.jpg" alt="Actividad cultural" /><span class="gal-label">Cultural</span></div>
+      <div class="gal-item" data-cat="cultural"><img src="imagenes/galeria/cultural/IMG-20260517-WA0195.jpg" alt="Actividad cultural" /><span class="gal-label">Cultural</span></div>
+      <div class="gal-item" data-cat="cultural"><img src="imagenes/galeria/cultural/IMG-20260517-WA0196.jpg" alt="Actividad cultural" /><span class="gal-label">Cultural</span></div>
+      <div class="gal-item" data-cat="cultural"><img src="imagenes/galeria/cultural/IMG-20260517-WA0198.jpg" alt="Actividad cultural" /><span class="gal-label">Cultural</span></div>
+      <div class="gal-item" data-cat="cultural"><img src="imagenes/galeria/cultural/IMG-20260517-WA0199.jpg" alt="Actividad cultural" /><span class="gal-label">Cultural</span></div>
+      <div class="gal-item" data-cat="cultural"><img src="imagenes/galeria/cultural/IMG-20260517-WA0200.jpg" alt="Actividad cultural" /><span class="gal-label">Cultural</span></div>
+
+      <!-- DEPORTES -->
+      <div class="gal-item" data-cat="deportes"><img src="imagenes/galeria/deportes/648235922_1381564900442480_6292677800975237375_n (1).jpg" alt="Deporte escolar" /><span class="gal-label">Deportes</span></div>
+      <div class="gal-item" data-cat="deportes"><img src="imagenes/galeria/deportes/654800935_1396499808948989_1363695297619987920_n.jpg" alt="Deporte escolar" /><span class="gal-label">Deportes</span></div>
+      <div class="gal-item" data-cat="deportes"><img src="imagenes/galeria/deportes/654990153_1396500248948945_3811423581393484507_n.jpg" alt="Deporte escolar" /><span class="gal-label">Deportes</span></div>
+      <div class="gal-item" data-cat="deportes"><img src="imagenes/galeria/deportes/655442550_1396500235615613_4160590450194876045_n.jpg" alt="Deporte escolar" /><span class="gal-label">Deportes</span></div>
+      <div class="gal-item" data-cat="deportes"><img src="imagenes/galeria/deportes/655660730_1396499422282361_8944520537239439093_n.jpg" alt="Deporte escolar" /><span class="gal-label">Deportes</span></div>
+      <div class="gal-item" data-cat="deportes"><img src="imagenes/galeria/deportes/658394884_1396500305615606_8548387467163806549_n.jpg" alt="Deporte escolar" /><span class="gal-label">Deportes</span></div>
+      <div class="gal-item" data-cat="deportes"><img src="imagenes/galeria/deportes/672330177_1414974507101519_6790628784917758870_n.jpg" alt="Deporte escolar" /><span class="gal-label">Deportes</span></div>
+      <div class="gal-item" data-cat="deportes"><img src="imagenes/galeria/deportes/680136105_1419419886656981_7845324951909616746_n.jpg" alt="Deporte escolar" /><span class="gal-label">Deportes</span></div>
+      <div class="gal-item" data-cat="deportes"><img src="imagenes/galeria/deportes/680939979_1419419913323645_1862857223850037565_n.jpg" alt="Deporte escolar" /><span class="gal-label">Deportes</span></div>
+
+      <!-- CONCURSOS -->
+      <div class="gal-item" data-cat="concursos"><img src="imagenes/galeria/concursos/597387872_1320151696583801_870411186735851639_n.jpg" alt="Concurso escolar" /><span class="gal-label">Concursos</span></div>
+      <div class="gal-item" data-cat="concursos"><img src="imagenes/galeria/concursos/597391110_1320151729917131_8656545470675628561_n.jpg" alt="Concurso escolar" /><span class="gal-label">Concursos</span></div>
+      <div class="gal-item" data-cat="concursos"><img src="imagenes/galeria/concursos/597391715_1320151469917157_7082040409173701207_n.jpg" alt="Concurso escolar" /><span class="gal-label">Concursos</span></div>
+      <div class="gal-item" data-cat="concursos"><img src="imagenes/galeria/concursos/597392916_1320151786583792_6368635039113128946_n.jpg" alt="Concurso escolar" /><span class="gal-label">Concursos</span></div>
+      <div class="gal-item" data-cat="concursos"><img src="imagenes/galeria/concursos/597607359_1320151243250513_9035092667746520653_n.jpg" alt="Concurso escolar" /><span class="gal-label">Concursos</span></div>
+      <div class="gal-item" data-cat="concursos"><img src="imagenes/galeria/concursos/597843684_1320151723250465_1103336101468352447_n.jpg" alt="Concurso escolar" /><span class="gal-label">Concursos</span></div>
+      <div class="gal-item" data-cat="concursos"><img src="imagenes/galeria/concursos/598031584_1320151339917170_3876960984252901055_n.jpg" alt="Concurso escolar" /><span class="gal-label">Concursos</span></div>
+      <div class="gal-item" data-cat="concursos"><img src="imagenes/galeria/concursos/598112786_1320151756583795_3237718792040768124_n.jpg" alt="Concurso escolar" /><span class="gal-label">Concursos</span></div>
+      <div class="gal-item" data-cat="concursos"><img src="imagenes/galeria/concursos/598449135_1320151466583824_1041000316385049909_n.jpg" alt="Concurso escolar" /><span class="gal-label">Concursos</span></div>
+      <div class="gal-item" data-cat="concursos"><img src="imagenes/galeria/concursos/598617762_1320151809917123_8250696601589587577_n.jpg" alt="Concurso escolar" /><span class="gal-label">Concursos</span></div>
+      <div class="gal-item" data-cat="concursos"><img src="imagenes/galeria/concursos/599949541_1320151279917176_4812316652729881258_n.jpg" alt="Concurso escolar" /><span class="gal-label">Concursos</span></div>
+      <div class="gal-item" data-cat="concursos"><img src="imagenes/galeria/concursos/600471337_1320151303250507_6772504712168810301_n.jpg" alt="Concurso escolar" /><span class="gal-label">Concursos</span></div>
+      <div class="gal-item" data-cat="concursos"><img src="imagenes/galeria/concursos/600885705_1320140589918245_627556607472541492_n.jpg" alt="Concurso escolar" /><span class="gal-label">Concursos</span></div>
+      <div class="gal-item" data-cat="concursos"><img src="imagenes/galeria/concursos/601443617_1320151793250458_3567309074052379317_n.jpg" alt="Concurso escolar" /><span class="gal-label">Concursos</span></div>
 
       <!-- VIDA ESTUDIANTIL -->
       <div class="gal-item" data-cat="vida"><img src="imagenes/galeria/vida/dia de las madres 1.jpg" alt="Día de las Madres" /><span class="gal-label">Vida Estudiantil</span></div>
@@ -145,13 +192,15 @@
         <h4>Equipo Desarrollador</h4>
         <p class="footer-creditos">
           Proyecto desarrollado por:<br />
-          <span>1. [Nombre del integrante 1]</span><br />
-          <span>2. [Nombre del integrante 2]</span><br />
-          <span>3. [Nombre del integrante 3]</span><br />
-          <span>4. [Nombre del integrante 4]</span><br />
-          <span>5. [Nombre del integrante 5]</span><br /><br />
-          Materia: Informática · Grupo: [X]<br />
-          Ciclo escolar 2024–2025
+          <span>1. David Carbajal Tacuba</span><br />
+          <span>2. Claude — Asistente IA (Anthropic)</span><br />
+          <span>3. Yahel Guillermo Arce Valdez</span><br />
+          <span>4. Karla Elena Martínez Nápoles</span><br />
+          <span>5. Josué Jonathan Mozo García</span><br />
+          <span>6. Cristopher Apolonio Díaz</span><br />
+          <span>7. Samantha Anahí Guerrero Mayo</span><br /><br />
+          Materia: Informática · Grupo: 6°A<br />
+          Ciclo escolar 2023–2026
         </p>
       </div>
 
@@ -165,6 +214,15 @@
     </div>
   </div>
 </footer>
+
+<!-- Lightbox -->
+<div id="lb" onclick="cerrarLb()">
+  <button id="lb-close" onclick="cerrarLb()" title="Cerrar">&times;</button>
+  <button id="lb-prev" onclick="event.stopPropagation();moverLb(-1)" title="Anterior"><i class="fa fa-chevron-left"></i></button>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()" />
+  <button id="lb-next" onclick="event.stopPropagation();moverLb(1)" title="Siguiente"><i class="fa fa-chevron-right"></i></button>
+  <span id="lb-counter"></span>
+</div>
 
 <button id="btn-top" aria-label="Volver arriba">
   <i class="fa fa-chevron-up"></i>
@@ -207,6 +265,42 @@ function filtrarGal(btn, cat) {
     item.classList.toggle('visible', cat === 'todos' || item.dataset.cat === cat);
   });
 }
+
+/* ── Lightbox ── */
+var _lbFotos = [], _lbIdx = 0;
+
+document.querySelectorAll('.gal-item img').forEach(function (img) {
+  img.addEventListener('click', function () {
+    // Recoge solo las imágenes visibles en ese momento
+    _lbFotos = Array.from(document.querySelectorAll('.gal-item.visible img'));
+    _lbIdx   = _lbFotos.indexOf(this);
+    if (_lbIdx < 0) { _lbFotos = Array.from(document.querySelectorAll('.gal-item img')); _lbIdx = _lbFotos.indexOf(this); }
+    mostrarLb();
+  });
+});
+
+function mostrarLb() {
+  var img = _lbFotos[_lbIdx];
+  document.getElementById('lb-img').src  = img.src;
+  document.getElementById('lb-img').alt  = img.alt;
+  document.getElementById('lb-counter').textContent = (_lbIdx + 1) + ' / ' + _lbFotos.length;
+  document.getElementById('lb').classList.add('on');
+  document.body.style.overflow = 'hidden';
+}
+function moverLb(d) {
+  _lbIdx = (_lbIdx + d + _lbFotos.length) % _lbFotos.length;
+  mostrarLb();
+}
+function cerrarLb() {
+  document.getElementById('lb').classList.remove('on');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', function (e) {
+  if (!document.getElementById('lb').classList.contains('on')) return;
+  if (e.key === 'ArrowRight') moverLb(1);
+  else if (e.key === 'ArrowLeft') moverLb(-1);
+  else if (e.key === 'Escape') cerrarLb();
+});
 </script>
 
 </body>

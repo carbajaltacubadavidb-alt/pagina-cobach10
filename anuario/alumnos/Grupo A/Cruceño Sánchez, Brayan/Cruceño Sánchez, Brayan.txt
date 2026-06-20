@@ -1,7 +1,9 @@
 FORMATO ENTREVISTA
 ==================
 Nombre: Cruceño Sánchez, Brayan
-Fecha de nacimiento: 31 / 10 / 2008
+
+Fecha de nacimiento: 31/10/2008
+
 Capacitación / Paquete: informatica / naturales
 
 Experiencia en COBACH:

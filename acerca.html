@@ -10,24 +10,6 @@
 </head>
 <body>
 
-<!-- ░░ TOPBAR ░░ -->
-<div class="topbar">
-  <div class="contenedor">
-    <span>
-      <i class="fa fa-phone"></i> (624) 124-6108
-      &nbsp;|&nbsp;
-      <i class="fa fa-envelope"></i> plantel10@cobachbcs.edu.mx
-    </span>
-    <span class="redes">
-      Síguenos:
-      <a href="https://www.facebook.com/COBACH10BCS/" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
-      <a href="https://www.instagram.com/cobach_10bcs/" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-      <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-      <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-    </span>
-  </div>
-</div>
-
 <!-- ░░ HEADER / NAVEGACIÓN ░░ -->
 <header>
   <div class="contenedor">
@@ -83,8 +65,8 @@
           <p>Desde sus inicios, el plantel ha mantenido el compromiso institucional de ofrecer educación de calidad, invirtiendo constantemente en infraestructura, formación docente y programas académicos que respondan a las necesidades del entorno social y productivo de Baja California Sur, alineados con los estándares nacionales de la Secretaría de Educación Pública (SEP).</p>
         </div>
         <div class="historia-img">
-          <img src="imagenes/plantel/historia.jpg" alt="Historia del plantel"
-               onerror="this.outerHTML='<p style=\'padding:24px;text-align:center;\'>📷 imagenes/plantel/historia.jpg</p>'" />
+          <img src="imagenes/plantel/historia.png" alt="Historia del plantel"
+               onerror="this.outerHTML='<p style=\'padding:24px;text-align:center;\'>📷 imagenes/plantel/historia.png</p>'" />
         </div>
       </div>
     </div>
@@ -207,13 +189,15 @@
         <h4>Equipo Desarrollador</h4>
         <p class="footer-creditos">
           Proyecto desarrollado por:<br />
-          <span>1. [Nombre del integrante 1]</span><br />
-          <span>2. [Nombre del integrante 2]</span><br />
-          <span>3. [Nombre del integrante 3]</span><br />
-          <span>4. [Nombre del integrante 4]</span><br />
-          <span>5. [Nombre del integrante 5]</span><br /><br />
-          Materia: Informática · Grupo: [X]<br />
-          Ciclo escolar 2024–2025
+          <span>1. David Carbajal Tacuba</span><br />
+          <span>2. Claude — Asistente IA (Anthropic)</span><br />
+          <span>3. Yahel Guillermo Arce Valdez</span><br />
+          <span>4. Karla Elena Martínez Nápoles</span><br />
+          <span>5. Josué Jonathan Mozo García</span><br />
+          <span>6. Cristopher Apolonio Díaz</span><br />
+          <span>7. Samantha Anahí Guerrero Mayo</span><br /><br />
+          Materia: Informática · Grupo: 6°A<br />
+          Ciclo escolar 2023–2026
         </p>
       </div>
 
@@ -268,4 +252,10 @@ function abrirTab(btn, id) {
   var contenedor = btn.closest('.contenedor, section');
   contenedor.querySelectorAll('.tab-btn').forEach(function (b) { b.classList.remove('on'); });
   contenedor.querySelectorAll('.tab-panel').forEach(function (p) { p.classList.remove('on'); });
-  btn.classList.add('o
+  btn.classList.add('on');
+  document.getElementById(id).classList.add('on');
+}
+</script>
+
+</body>
+</html>
